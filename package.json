@@ -1,6 +1,6 @@
 {
   "name": "hubot-slack-link-manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Hubot script to store and search links posted to Slack using Firebase!",
   "main": "index.coffee",
   "scripts": {
