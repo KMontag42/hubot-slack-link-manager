@@ -1,7 +1,7 @@
 {
   "name": "hubot-slack-link-manager",
-  "version": "1.0.0",
-  "description": "A Hubot script to store and search links posted to Slack",
+  "version": "1.0.1",
+  "description": "A Hubot script to store and search links posted to Slack using Firebase!",
   "main": "index.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
