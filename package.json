@@ -1,0 +1,38 @@
+{
+  "name": "hubot-slack-link-manager",
+  "version": "1.0.0",
+  "description": "A Hubot script to store and search links posted to Slack",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KMontag42/hubot-slack-link-manager.git"
+  },
+  "keywords": [
+    "Hubot",
+    "hubot",
+    "hubot-scripts",
+    "Slack",
+    "slack",
+    "Link",
+    "link",
+    "Firebase",
+    "firebase"
+  ],
+  "author": "Kyle Montag",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KMontag42/hubot-slack-link-manager/issues"
+  },
+  "homepage": "https://github.com/KMontag42/hubot-slack-link-manager#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "firebase": "^3.5.2",
+    "request": "^2.76.0"
+  },
+  "peerDependencies": {
+    "hubot": "2.x"
+  }
+}
