@@ -34,3 +34,15 @@ You can find information about each value [in the Firebase docs](https://firebas
 * `hubot show links`  - show all saved links
 * `hubot search links <query>`  - fuzzy match link description and query
 * `hubot show user links <user>` - shows all links a user has posted
+
+## Usage
+
+This script will listen for any URL posted in rooms that Hubot is a member of.
+It will make a naive GET request to the URL in an attempt to get info about the page from `og` tags.
+Falls back to the `<title>` tag, or if the request itself fails, `null` is saved as the description.
+
+Users can also manually save links.
+
+## Contributing
+
+* Make a pull request!
