@@ -4,23 +4,31 @@ A Hubot script to store and search links posted to Slack using Firebase!
 ## Pre-installation
 You will need to sign up for a Firebase account [here](firebase.google.com)
 
-## Environment Variables
+You will then need to init a Firebase App instance for your Hubot.
 
-Set up the following env variables on your server (generally Heroku).
+Generally I do this by creating an `_init.coffee` file in the `scripts` directory.
+This script will always be run first, and there you can init your Firebase App.
 
-You can find information about each value [in the Firebase docs](https://firebase.google.com/docs/web/setup)
+Example contents:
 
-* `FIREBASE_API_TOKEN` - API token from Firebase
-* `FIREBASE_AUTH_DOMAIN`
-* `FIREBASE_DATABASE_URL`
-* `FIREBASE_STORAGE_BUCKET`
+```coffeescript
+# _init.coffee
+Firebase = require 'firebase'
+config = {
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+}
+Firebase.initializeApp(config)
+```
 
 ## Installation
 
 `$ npm i -S hubot-slack-link-manager`
 
-```
-# external-scripts.json
+```json
+// external-scripts.json
 [
   ...
   "hubot-slack-link-manager"
